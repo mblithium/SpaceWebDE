@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-image: url('./filesystem/wallpapers/pexels-janez-podnar.jpg');
+}
+
+/* Native taskbar */
+#taskbar {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 5vh;
+    bottom: 0;
+}
+.taskbar-flex {
+    display: flex;
+    background-color: #2A2E32;
+    width: 100%;
+    height: 100%;
+    
+}
+.taskbar-items {
+    width: 100%;
+}
+
+.btn-menusuper {
+    width: 200px;
+    height: 100%;
+    padding: 10px;
+    color: white;
+    border: 1px solid white;
+    background-color: #2A2E32;
+}
+
+.div-menusuper {
+    position: absolute;
+    display: block;
+    width: 500px;
+    height: 50vh;
+    background-color: #2A2E32;
+    bottom: 5vh;
+}
+
+.menusuper__applicationsItem {
+    display: flex;
+    padding: 5px;
+    background-color: #2f3133;
+    border-bottom: 1px solid white;
+}
+
+.div-menusuper__actionbar {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
+
+.menusuper__actionbar-item {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
