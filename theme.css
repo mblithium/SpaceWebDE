@@ -14,7 +14,7 @@ body {
     position: absolute;
     display: block;
     width: 100vw;
-    height: 5vh;
+    height: 50px;
     bottom: 0;
 }
 .taskbar-flex {
@@ -22,10 +22,14 @@ body {
     background-color: #2A2E32;
     width: 100%;
     height: 100%;
+    justify-content: center;
+    align-items: center;
     
 }
 .taskbar-items {
+    position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
 .btn-menusuper {
@@ -43,12 +47,21 @@ body {
     width: 500px;
     height: 50vh;
     background-color: #2A2E32;
-    bottom: 5vh;
+    bottom: 50px;
+    overflow-block: hidden;
+    z-index: 99999999;
+}
+
+.div-menusuper__applications {
+    overflow-y: scroll;
+    width: 100%;
+    height: 90%;
+    display: block;
 }
 
 .menusuper__applicationsItem {
     display: flex;
-    padding: 5px;
+    padding: 15px;
     background-color: #2f3133;
     border-bottom: 1px solid white;
 }
@@ -58,12 +71,46 @@ body {
     width: 100%;
     height: 50px;
     padding: 10px;
+    align-items: center;
 }
 
 .menusuper__actionbar-item {
     width: 100%;
 }
+menusuper__actionbar-item menusuper__actionbar-user
 
 .hidden {
     display: none;
+}
+
+/* Window Default Styles */
+.swde-window {
+    position: absolute;
+    display: block;
+    width: 800px;
+    height: 600px;
+    min-width: 300px;
+    min-height: 200px;
+    background-color: #5c6064;
+}
+
+.swde-window-titlebar {
+    display: flex;
+    background-color: #2A2E32;
+    width: 100%;
+    padding: 5px;
+}
+.swde-window-titlebar > * {
+    width: 100%;
+}
+
+.swde-window-actions button {
+    width: 30px;
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+}
+
+.swde-window-actions__buttons {
+    text-align: right;
 }
