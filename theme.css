@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 body {
@@ -64,6 +65,23 @@ body {
     padding: 15px;
     background-color: #2f3133;
     border-bottom: 1px solid white;
+    cursor: pointer;
+    width: 100%;
+}
+
+.menusuper__applicationsIcon img {
+    width: 50px;
+}
+
+.menusuper__applicationsName {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 5px;
+}
+
+.menusuper__applicationsName p {
+    text-align: center;
 }
 
 .div-menusuper__actionbar {
@@ -92,6 +110,8 @@ menusuper__actionbar-item menusuper__actionbar-user
     min-width: 300px;
     min-height: 200px;
     background-color: #5c6064;
+    border-radius: 5px;
+    border: 1px solid #2A2E32;
 }
 
 .swde-window-titlebar {
@@ -100,6 +120,11 @@ menusuper__actionbar-item menusuper__actionbar-user
     width: 100%;
     padding: 5px;
 }
+
+.swde-window-icon img {
+    width: 30px;
+}
+
 .swde-window-titlebar > * {
     width: 100%;
 }
@@ -109,8 +134,20 @@ menusuper__actionbar-item menusuper__actionbar-user
     padding: 5px;
     border-radius: 15px;
     border: 1px solid transparent;
+    cursor: pointer;
 }
 
 .swde-window-actions__buttons {
     text-align: right;
+}
+
+.swde-window-action__close {
+    background-color: rgb(230, 115, 115);
+}
+.swde-window-action__minimize {
+    background-color: rgb(238, 224, 146);
+}
+
+.swde-window-action__maximize {
+    background-color: rgb(200, 235, 148);
 }
