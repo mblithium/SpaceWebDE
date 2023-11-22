@@ -1,0 +1,63 @@
+/* Window Default Styles */
+.swde-window {
+    position: absolute;
+    display: block;
+    width: 800px;
+    height: 600px;
+    min-width: 300px;
+    min-height: 200px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #2A2E32;
+}
+
+.swde-window-titlebar {
+    display: flex;
+    position: relative;
+    background-color: var(--window-titlebar-bg);
+    color: var(--windoe-titlebar-font-color);
+    width: 100%;
+    padding: 5px;
+    height: 40px;
+}
+
+.swde-window-icon img {
+    width: 30px;
+}
+
+.swde-window-titlebar > * {
+    width: 100%;
+}
+
+.swde-window-actions button {
+    width: 30px;
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.swde-window-actions__buttons {
+    text-align: right;
+}
+
+.swde-window-action__close {
+    background-color: rgb(230, 115, 115);
+}
+.swde-window-action__minimize {
+    background-color: rgb(238, 224, 146);
+}
+
+.swde-window-action__maximize {
+    background-color: rgb(200, 235, 148);
+}
+
+.swde-window-content {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: calc(100% - 40px);
+    white-space:nowrap;
+}

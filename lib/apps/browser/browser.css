@@ -1,0 +1,16 @@
+.swdeapp-browser {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    position: relative;
+}
+.swdeApp_browser_page {
+    position: relative;
+    width: auto;
+    height: calc(100% - 30px);
+}
+
+.swdeApp_browser_searchbar input {
+    width: 100%;
+    height: 30px;
+}

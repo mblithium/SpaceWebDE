@@ -1,3 +1,13 @@
+:root {
+    --body-bgcolor: rgb(255, 255, 255);
+    --window-bgcolor: white;
+    --window-font-color: black;
+    --window-titlebar-bg: rgb(255, 255, 255);
+    --windoe-titlebar-font-color: black;
+    --system-font-color: black;
+
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,14 +16,17 @@
 }
 
 body {
-    color: white;
+    color: var(--system-font-color);
 }
 
 #desktop {
-    z-index: -5;
+    z-index: -10;
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
+    position: absolute;
+    width: 100%,
+    calc(100% - 50px);
 }
 
 /* Native taskbar */
@@ -27,7 +40,7 @@ body {
 }
 .taskbar-flex {
     display: flex;
-    background-color: #2A2E32;
+    background-color: var(--body-bgcolor);
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -43,10 +56,11 @@ body {
 .btn-menusuper {
     width: 200px;
     height: 100%;
-    padding: 10px;
-    color: white;
-    border: 1px solid white;
-    background-color: #2A2E32;
+    padding: 5px;
+    margin: 0 6px;
+    color: var(--system-font-color);
+    border: 1px solid var(--system-font-color);
+    background-color: var(--body-bgcolor);
 }
 
 .div-menusuper {
@@ -54,7 +68,7 @@ body {
     display: none;
     width: 500px;
     height: 50vh;
-    background-color: #2A2E32;
+    background-color: var(--body-bgcolor);
     bottom: 50px;
     overflow-block: hidden;
     z-index: 99999999;
@@ -70,7 +84,7 @@ body {
 .menusuper__applicationsItem {
     display: flex;
     padding: 15px;
-    background-color: #2f3133;
+    background-color: var(--body-bgcolor);
     border-bottom: 1px solid white;
     cursor: pointer;
     width: 100%;
@@ -87,6 +101,10 @@ body {
     margin-left: 5px;
 }
 
+.menusuper__actionbar-item-config {
+    width: 50px;
+}
+
 .menusuper__applicationsName p {
     text-align: center;
 }
@@ -101,73 +119,15 @@ body {
 
 .menusuper__actionbar-item {
     width: 100%;
+    align-self: center;
 }
-menusuper__actionbar-item menusuper__actionbar-user
+
+.menusuper__actionbar-user > .menusuper__actionbar-item-config {
+    margin: 0 auto;
+    cursor: pointer;
+}
 
 .hidden {
     display: none;
 }
 
-/* Window Default Styles */
-.swde-window {
-    position: absolute;
-    display: block;
-    width: 800px;
-    height: 600px;
-    min-width: 300px;
-    min-height: 200px;
-    background-color: #5c6064;
-    border-radius: 5px;
-    border: 1px solid #2A2E32;
-}
-
-.swde-window-titlebar {
-    display: flex;
-    position: relative;
-    background-color: #2A2E32;
-    width: 100%;
-    padding: 5px;
-    height: 40px;
-}
-
-.swde-window-icon img {
-    width: 30px;
-}
-
-.swde-window-titlebar > * {
-    width: 100%;
-}
-
-.swde-window-actions button {
-    width: 30px;
-    padding: 5px;
-    border-radius: 15px;
-    border: 1px solid transparent;
-    cursor: pointer;
-}
-
-.swde-window-actions__buttons {
-    text-align: right;
-}
-
-.swde-window-action__close {
-    background-color: rgb(230, 115, 115);
-}
-.swde-window-action__minimize {
-    background-color: rgb(238, 224, 146);
-}
-
-.swde-window-action__maximize {
-    background-color: rgb(200, 235, 148);
-}
-
-.swde-window-content {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: calc(100% - 30px);
-    overflow: hidden;
-    white-space:nowrap;
-}
