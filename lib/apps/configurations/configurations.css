@@ -1,3 +1,7 @@
 .swdeAppConfig {
     background-color: aliceblue;
 }
+
+.swdeAppConfig > h1 {
+    text-align: center;
+}

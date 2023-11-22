@@ -33,6 +33,7 @@
 .swde-window-title > p {
     font-size: auto;
     text-size-adjust: auto;
+    text-align: center;
 }
 
 .swde-window-icon img {
