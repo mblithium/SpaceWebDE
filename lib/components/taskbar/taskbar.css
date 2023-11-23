@@ -24,12 +24,13 @@
 .div-menusuper {
     position: absolute;
     display: none;
-    width: 500px;
     height: 50vh;
     background-color: var(--body-bgcolor);
-    bottom: 50px;
+    bottom: 55px;
     overflow-block: hidden;
-    z-index: 99999999;
+    z-index: 100;
+    border: 1px transparent;
+    border-radius: 5px;
 }
 
 .div-menusuper__applications {
@@ -77,11 +78,10 @@
 
 .menusuper__actionbar-item {
     width: 100%;
-    align-self: center;
+    text-align: center;
 }
 
 .menusuper__actionbar-user > .menusuper__actionbar-item-config {
-    margin: 0 auto;
     cursor: pointer;
 }
 
@@ -95,10 +95,23 @@
     height: 100%;
 }
 
+img.systemtray-icon  {
+    position: relative;
+    height: 100%;
+}
+
+.taskbar-systemtray {
+    text-align: right;
+}
 .btn-menusuper {
     height: 100%;
     padding: 5px;
     margin: 0 6px;
     color: var(--system-font-color);
     background-color: var(--body-bgcolor);
+}
+
+.taskbar-systemtray_item .watch {
+    display: inline-block;
+    height: 100%;
 }

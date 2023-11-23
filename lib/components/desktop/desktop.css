@@ -1,0 +1,19 @@
+#desktop {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: calc(100% - 50px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -10;
+    overflow: hidden;
+}
+
+.desktopdevnote {
+    position: absolute;
+    text-align: right;
+    top: calc(100% - 60px);
+    right: 5px;
+    color: white;
+}

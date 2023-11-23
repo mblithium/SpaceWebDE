@@ -7,10 +7,11 @@
     min-width: 300px;
     min-height: 200px;
     background-color: white;
-    border-radius: 5px;
-    border: 1px solid #2A2E32;
+    border-radius: 15px;
+    border: 1px solid rgb(34, 34, 34);
     left: 25%;
     top: 0;
+    overflow: hidden;
 }
 
 .swde-window iframe {
@@ -32,11 +33,15 @@
     white-space:nowrap;
 }
 
+.swde-window-title {
+    align-self: center;
+    overflow: hidden;
+}
+
 .swde-window-title > p {
     font-size: auto;
     text-size-adjust: auto;
     text-align: center;
-    overflow: hidden;
     white-space:nowrap;
 }
 
