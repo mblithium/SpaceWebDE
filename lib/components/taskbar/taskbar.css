@@ -1,0 +1,104 @@
+#taskbar {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 50px;
+    bottom: 0;
+    z-index: 999;
+}
+.taskbar-flex {
+    display: flex;
+    background-color: var(--body-bgcolor);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.taskbar-items {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.div-menusuper {
+    position: absolute;
+    display: none;
+    width: 500px;
+    height: 50vh;
+    background-color: var(--body-bgcolor);
+    bottom: 50px;
+    overflow-block: hidden;
+    z-index: 99999999;
+}
+
+.div-menusuper__applications {
+    overflow-y: scroll;
+    width: 100%;
+    height: 90%;
+    display: block;
+}
+
+.menusuper__applicationsItem {
+    display: flex;
+    padding: 15px;
+    background-color: var(--body-bgcolor);
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    width: 100%;
+}
+
+.menusuper__applicationsIcon img {
+    width: 50px;
+}
+
+.menusuper__applicationsName {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 5px;
+}
+
+.menusuper__actionbar-item-config {
+    width: 50px;
+}
+
+.menusuper__applicationsName p {
+    text-align: center;
+}
+
+.div-menusuper__actionbar {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    align-items: center;
+}
+
+.menusuper__actionbar-item {
+    width: 100%;
+    align-self: center;
+}
+
+.menusuper__actionbar-user > .menusuper__actionbar-item-config {
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+
+.taskbar-items {
+    width: 100%;
+    height: 100%;
+}
+.btn-menusuper img {
+    position: relative;
+    height: 100%;
+}
+
+.btn-menusuper {
+    height: 100%;
+    padding: 5px;
+    margin: 0 6px;
+    color: var(--system-font-color);
+    background-color: var(--body-bgcolor);
+}

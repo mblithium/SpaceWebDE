@@ -28,12 +28,16 @@
     padding: 5px;
     height: 40px;
     flex-wrap: nowrap;
+    overflow: hidden;
+    white-space:nowrap;
 }
 
 .swde-window-title > p {
     font-size: auto;
     text-size-adjust: auto;
     text-align: center;
+    overflow: hidden;
+    white-space:nowrap;
 }
 
 .swde-window-icon img {
