@@ -2,8 +2,8 @@
 .swde-window {
     position: absolute;
     display: block;
-    width: 800px;
-    height: 600px;
+    width: 70%;
+    height: 90%;
     min-width: 300px;
     min-height: 200px;
     background-color: white;
@@ -61,6 +61,7 @@
 }
 .swde-window-action__minimize {
     background-color: rgb(238, 224, 146);
+    display: none;
 }
 
 .swde-window-action__maximize {
