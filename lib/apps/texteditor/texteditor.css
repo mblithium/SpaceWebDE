@@ -1,0 +1,29 @@
+.swdeapp_texteditor {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.swdeapp_texteditor .toolbar {
+    width: 100%;
+    height: 5%;
+    padding: 2px 5px;
+}
+
+.swdeapp_texteditor .toolbar button {
+    padding: 10px;
+    height: 100%;
+    border: none;
+    position: relative;
+}
+
+.swdeapp_texteditor .editor {
+    width: 100%;
+    height: 95%;
+}
+
+.swdeapp_texteditor .editor .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    resize: none;
+}
