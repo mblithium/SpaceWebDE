@@ -1,0 +1,35 @@
+{
+    "name": "SpaceWebDE",
+    "short_name": "SpaceWebDE",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "A Web Desktop Environment experiment.",
+    "icons": [
+      {
+        "src": "img/icons/app/512-512.png",
+        "sizes": "512x512"
+      },
+      {
+        "src": "img/icons/app/192-192.png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "img/icons/app/144-144.png",
+        "sizes": "144x144"
+      },
+      {
+        "src": "img/icons/app/96-96.png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "img/icons/app/72-72.png",
+        "sizes": "72x72"
+      },
+      {
+        "src": "img/icons/app/48-48.png",
+        "sizes": "48x48"
+      }
+    ]
+}
+  
