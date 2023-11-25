@@ -16,6 +16,11 @@
     position: relative;
 }
 
+button.load input[type="file"] {
+    display: none;
+}
+
+
 .swdeapp_texteditor .editor {
     width: 100%;
     height: 95%;
