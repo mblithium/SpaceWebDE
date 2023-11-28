@@ -115,3 +115,9 @@ img.systemtray-icon  {
     display: inline-block;
     height: 100%;
 }
+
+.openedapps img {
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
