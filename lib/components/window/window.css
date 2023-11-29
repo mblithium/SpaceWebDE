@@ -1,4 +1,16 @@
 /* Window Default Styles */
+@keyframes windowup {
+    0%   { 
+        transform: scale(0);
+    }
+    100% { 
+        transform: scale(1);
+    }
+}
+@keyframes windowdown {
+    100%   { width: 0px; height: 0px; }
+}
+
 .swde-window {
     position: absolute;
     display: block;
@@ -12,6 +24,8 @@
     left: 25%;
     top: 0;
     overflow: hidden;
+    animation-name: windowup;
+    animation-duration: 0.6s;
 }
 
 .swde-window iframe {
@@ -47,6 +61,7 @@
 
 .swde-window-icon img {
     width: 30px;
+    user-select: none;
 }
 
 .swde-window-titlebar > * {
@@ -85,4 +100,23 @@
     max-width: 100%;
     max-height: calc(100% - 40px);
     white-space:nowrap;
+}
+
+@keyframes windowclosed {
+    0%   { 
+        transform: scale(1);
+    }
+    100% { 
+        transform: scale(0);
+    }
+}
+@keyframes windowdown {
+    100%   { width: 0px; height: 0px; }
+}
+
+.windowclosed {
+    animation-name: windowclosed;
+    animation-duration: 0.6s;
+    transition: windowclosed 2s;
+    transition-timing-function: ease-out;
 }
