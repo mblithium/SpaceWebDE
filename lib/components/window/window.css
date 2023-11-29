@@ -85,7 +85,6 @@
 }
 .swde-window-action__minimize {
     background-color: rgb(238, 224, 146);
-    display: none;
 }
 
 .swde-window-action__maximize {
