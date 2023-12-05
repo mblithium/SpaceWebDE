@@ -18,7 +18,8 @@
 .taskbar-items {
     position: relative;
     width: 100%;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: auto;
 }
 
 .div-menusuper {
@@ -37,6 +38,7 @@
     overflow-y: scroll;
     width: 100%;
     height: 90%;
+    min-width: 400px;
     display: block;
 }
 
@@ -116,9 +118,14 @@ img.systemtray-icon  {
     height: 100%;
 }
 
+.openedapps {
+    display: block ruby;
+    text-align: center;
+}
 .openedapps img {
     height: 50px;
     width: 50px;
+    padding: 10px;
     position: relative;
     border-radius: 50%;
 }
