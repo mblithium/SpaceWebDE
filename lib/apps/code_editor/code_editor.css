@@ -1,0 +1,15 @@
+.swdeapp_code_editor {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.swdeapp_code_editor .flems {
+    width: 100%;
+    height: 95%;
+}
+
+.swdeapp_code_editor .toolbar {
+    width: 100%;
+    height: 5%;
+}
